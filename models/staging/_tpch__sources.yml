@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: tpch
+    description: "Snowflakeが標準提供するTPC-Hサンプルデータ（共有DB・ロード不要）"
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCH_SF1
+    tables:
+      - name: orders
+        description: "注文ヘッダ。約150万件。O_ORDERDATE は 1992-01-01〜1998-08-02"
+      - name: lineitem
+        description: "注文明細。約600万件"
+      - name: customer
+        description: "顧客マスタ。15万件"
+      - name: nation
+        description: "国マスタ。25件"
